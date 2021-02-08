@@ -1,0 +1,22 @@
+.logo {
+  color: $primary-text-color;
+  font-family: $secondary-font-family;
+
+  font-weight: $secondary-font-weight;
+  font-size: $logo-font-size;
+  line-height: $logo-line-height;
+
+  &__header {
+    margin-right: 93px;
+  }
+
+  &__blue {
+    color: $accent-color;
+  }
+
+  &__footer {
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+  }
+}

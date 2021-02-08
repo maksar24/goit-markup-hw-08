@@ -1,0 +1,28 @@
+.advantage {
+  &__container {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: inherit;
+    line-height: $primary-line-height;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    text-align: left;
+    font-weight: $primary-font-weight;
+    line-height: $secondary-line-height;
+  }
+
+  &__icon {
+    @include position(flex);
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+
+    background-color: $secondary-bg-color;
+  }
+}

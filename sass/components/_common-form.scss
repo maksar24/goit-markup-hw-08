@@ -1,0 +1,159 @@
+.common-form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: $secondary-font-weight;
+    font-size: $form-title-font-size;
+    line-height: $form-title-line-height;
+    text-align: center;
+    color: $primary-text-color;
+  }
+
+  &__field {
+    margin-bottom: 10px;
+  }
+
+  &__field,
+  &__comment {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+  }
+
+  &__frame {
+    width: 100%;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  }
+
+  &__input {
+    height: 40px;
+    padding-left: 42px;
+
+    @include transit(border, outline);
+  }
+
+  &__frame:focus {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+
+  &__icon {
+    @include transit(fill);
+  }
+
+  &__field:focus-within &__icon {
+    fill: $accent-color;
+  }
+
+  &__textarea {
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+
+    line-height: $primary-line-height;
+    letter-spacing: 0.01em;
+
+    resize: none;
+
+    @include transit(border, outline);
+  }
+
+  &__textarea:placeholder-shown {
+    color: $placeholder-color;
+  }
+
+  &__text {
+    margin-bottom: 4px;
+
+    font-weight: $primary-font-weight;
+    font-size: $form-text-font-size;
+    line-height: $section-title-line-height;
+    letter-spacing: 0.01em;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__icon-frame {
+    @include position(flex);
+    width: 18px;
+    height: 18px;
+
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+  }
+
+  &__background-tick {
+    position: absolute;
+    top: 3px;
+    left: 12px;
+
+    @include position(flex);
+    cursor: pointer;
+    width: 16px;
+    height: 15px;
+
+    background-color: $accent-color;
+    border-radius: 2px;
+
+    opacity: 0;
+    @include transit(opacity);
+  }
+
+  &__old-checkbox:checked ~ &__background-tick {
+    opacity: 1;
+  }
+
+  &__old-checkbox:checked &__policy-text::before {
+    opacity: 0;
+  }
+
+  &__policy-text::before:focus,
+  &__policy-text:focus {
+    border-color: $accent-color;
+  }
+
+  &__policy-text::before {
+    content: '';
+
+    display: block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8.38px;
+    margin-top: 3px;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+
+    opacity: 1;
+    @include transit(opacity);
+
+    cursor: pointer;
+  }
+
+  &__policy-text {
+    display: flex;
+    font-weight: $primary-font-weight;
+    line-height: $secondary-line-height;
+  }
+
+  &__link {
+    margin-left: 3px;
+
+    color: $accent-color;
+  }
+
+  &__policy {
+    position: relative;
+    @include position(flex);
+    margin-bottom: 30px;
+  }
+}

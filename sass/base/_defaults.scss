@@ -1,0 +1,27 @@
+body {
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+
+  font-size: $primary-font-size;
+  font-weight: $special-font-weight;
+  font-family: $main-font-family;
+  letter-spacing: 0.03em;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  display: block;
+}
