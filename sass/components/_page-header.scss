@@ -48,9 +48,7 @@
 
     opacity: 0;
     transform: scaleX(0);
-    @include transit(color);
-    @include transit(opacity);
-    @include transit(transform);
+    @include transit(color, opacity, transform);
   }
 
   &__link--current::after,
