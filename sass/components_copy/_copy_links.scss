@@ -1,0 +1,68 @@
+.links {
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  width: 206px;
+
+  &__item {
+    width: 44px;
+    height: 44px;
+  }
+
+  &__social {
+    @include position(inline-flex);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    color: $link-color;
+    fill: currentColor;
+
+    @include transit(fill, background-color);
+  }
+
+  &__social:focus,
+  &__social:hover {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+
+  &__footer {
+    margin-bottom: 0px;
+  }
+
+  &__footer-social-link {
+    color: $primary-white-color;
+    background-color: $footer-social-link-color;
+
+    @include transit(background-color);
+  }
+
+  &__footer-social-link:hover,
+  &__footer-social-link:focus {
+    background-color: $accent-color;
+  }
+
+  &__customers {
+    width: 100%;
+  }
+
+  &__customer {
+    @include position(inline-flex);
+    width: 170px;
+    height: 90px;
+    border: 1px solid $link-color;
+    border-radius: 4px;
+
+    color: $link-color;
+    fill: currentColor;
+
+    @include transit(color, border-color);
+  }
+
+  &__customer:focus,
+  &__customer:hover {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}

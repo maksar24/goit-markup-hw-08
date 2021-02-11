@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $another-bg-color;
+
+  &__address {
+    margin-bottom: 9px;
+
+    color: $primary-white-color;
+
+    font-style: normal;
+    font-weight: $primary-font-weight;
+    line-height: $secondary-line-height;
+  }
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__block {
+    margin-right: 70px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+
+    font-size: inherit;
+    font-weight: $secondary-font-weight;
+    line-height: $primary-line-height;
+    text-transform: uppercase;
+  }
+}
