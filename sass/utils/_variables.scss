@@ -18,8 +18,10 @@ $secondary-font-size: 16px;
 $third-font-size: 18px;
 $form-text-font-size: 12px;
 $form-title-font-size: 20px;
-$logo-font-size: 26px;
-$hero-title-font-size: 44px;
+$logo-font-size: 24px;
+$logo-desktop-font-size: 26px;
+$hero-title-font-size: 26px;
+$hero-title-desktop-font-size: 44px;
 
 $primary-line-height: 1.14;
 $secondary-line-height: 1.71;
@@ -28,8 +30,10 @@ $project-name-line-height: 2;
 $section-title-line-height: 1.67;
 $card-set-text-line-height: 1.56;
 $form-title-line-height: 1.15;
-$hero-title-line-height: 1.36;
-$logo-line-height: 1.19;
+$hero-title-line-height: 1.62;
+$hero-title-desktop-line-height: 1.36;
+$logo-line-height: 1.17;
+$logo-desktop-line-height: 1.19;
 $radio-button-line-height: 1.62;
 $team-text-line-height: 1.18;
 
@@ -40,3 +44,6 @@ $special-font-weight: 500;
 
 $main-font-family: Roboto, sans-serif;
 $secondary-font-family: Raleway, cursive;
+
+$tablet-width: 768px;
+$desktop-width: 1200px;

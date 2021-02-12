@@ -17,6 +17,18 @@
 
   @include transit(box-shadow);
 
+  &__header-menu {
+    margin-left: auto;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

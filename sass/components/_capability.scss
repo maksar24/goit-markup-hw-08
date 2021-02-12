@@ -1,29 +1,34 @@
 .capability {
-  padding-top: 0px;
+  display: none;
 
-  &__picture {
+  @media (min-width: $desktop-width) {
     display: block;
-  }
+    padding-top: 0px;
 
-  &__item {
-    position: relative;
-  }
+    &__picture {
+      display: block;
+    }
 
-  &__overlay {
-    @include position(inline-flex);
+    &__item {
+      position: relative;
+    }
 
-    position: absolute;
-    width: 100%;
-    height: 70px;
-    bottom: 0;
+    &__overlay {
+      @include position(inline-flex);
 
-    background-color: $overlay-capability-color;
-  }
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      bottom: 0;
 
-  &__text {
-    color: $primary-white-color;
-    font-weight: $secondary-font-weight;
-    line-height: $primary-line-height;
-    text-transform: uppercase;
+      background-color: $overlay-capability-color;
+    }
+
+    &__text {
+      color: $primary-white-color;
+      font-weight: $secondary-font-weight;
+      line-height: $primary-line-height;
+      text-transform: uppercase;
+    }
   }
 }
