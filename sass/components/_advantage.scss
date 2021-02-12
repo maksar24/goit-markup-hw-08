@@ -1,11 +1,27 @@
 .advantage {
   &__list {
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+
     @media (min-width: $tablet-width) {
-      flex-wrap: wrap;
     }
 
     @media (min-width: $desktop-width) {
-      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 1 - 30px);
+
+    @media (min-width: $tablet-width) {
+      flex-basis: calc(100% / 2 - 60px);
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: calc(100% / 4 - 60px);
     }
   }
 
@@ -49,9 +65,5 @@
     @media (min-width: $desktop-width) {
       width: 270px;
     }
-  }
-
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
