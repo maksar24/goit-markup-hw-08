@@ -22,17 +22,15 @@
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 
   font-size: 36px;
   line-height: $section-title-line-height;
   text-align: center;
-}
-
-.item:not(:last-child) {
-  @media (min-width: $tablet-width) {
-    margin-right: 30px;
-  }
 }
 
 .text {

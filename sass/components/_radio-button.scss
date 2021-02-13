@@ -1,12 +1,31 @@
 .radio-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-top: -15px;
+  margin-bottom: 40px;
 
   background-color: $primary-white-color;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  @media (min-width: $tablet-width) {
+    @include position(flex);
+    margin-left: -8px;
+    margin-top: -8px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-left: 15px;
+    margin-top: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 8px;
+      margin-top: 8px;
+    }
   }
 
   &__filter {
