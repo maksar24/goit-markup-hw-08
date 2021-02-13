@@ -21,7 +21,11 @@
   &__comment {
     display: flex;
     flex-direction: column;
-    width: 448px;
+    width: 370px;
+
+    @media (min-width: $desktop-width) {
+      width: 448px;
+    }
   }
 
   &__frame {
@@ -95,7 +99,7 @@
   &__background-tick {
     position: absolute;
     top: 3px;
-    left: 12px;
+    left: 0px;
 
     @include position(flex);
     cursor: pointer;
@@ -107,6 +111,10 @@
 
     opacity: 0;
     @include transit(opacity);
+
+    @media (min-width: $desktop-width) {
+      left: 12px;
+    }
   }
 
   &__old-checkbox:checked ~ &__background-tick {
@@ -142,7 +150,12 @@
   &__policy-text {
     display: flex;
     font-weight: $primary-font-weight;
-    line-height: $secondary-line-height;
+    font-size: $form-text-font-size;
+
+    @media (min-width: $desktop-width) {
+      line-height: $secondary-line-height;
+      font-size: $primary-font-size;
+    }
   }
 
   &__link {
