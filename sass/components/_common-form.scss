@@ -125,8 +125,7 @@
     opacity: 0;
   }
 
-  &__policy-text::before:focus,
-  &__policy-text:focus {
+  &__policy-text::before:focus {
     border-color: $accent-color;
   }
 

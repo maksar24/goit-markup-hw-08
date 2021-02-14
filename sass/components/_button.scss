@@ -18,6 +18,8 @@
   @include transit(box-shadow);
 
   &__header-menu {
+    z-index: 1;
+
     margin-left: auto;
 
     background-color: transparent;
@@ -27,6 +29,23 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  &__header-menu-icon:hover,
+  &__header-menu-icon:focus {
+    fill: $accent-color;
+  }
+
+  &__header-menu-cross {
+    display: none;
+  }
+
+  &__header-menu.is-open &__header-menu-cross {
+    display: block;
+  }
+
+  &__header-menu.is-open &__header-menu-kebab {
+    display: none;
   }
 
   &:hover,
