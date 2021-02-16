@@ -296,10 +296,6 @@ a {
   color: #2196f3;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,6 +303,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__website-nav {
@@ -374,6 +371,7 @@ a {
 .hero {
   text-align: center;
   height: 400px;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -393,7 +391,8 @@ a {
 
 @media (min-width: 768px) {
   .hero {
-    background-image: url(../images/hero/hero-bg-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet.jpg);
   }
 }
 
@@ -409,7 +408,8 @@ a {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/hero/hero-bg-desktop.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg-desktop.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-desktop.jpg);
   }
 }
 
@@ -578,6 +578,7 @@ a {
 }
 
 .team {
+  min-width: 480px;
   background-color: #f5f4fa;
 }
 
@@ -805,6 +806,7 @@ a {
 }
 
 .footer {
+  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
@@ -1515,7 +1517,14 @@ a {
 }
 
 .card-set__example {
-  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #212121;
   background-color: #ffffff;
 }
@@ -1533,6 +1542,9 @@ a {
 }
 
 .card-set__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border: 1px solid #eeeeee;
   padding: 20px 24px;
 }

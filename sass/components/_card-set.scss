@@ -70,7 +70,9 @@
   }
 
   &__example {
-    display: block;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
     color: $primary-text-color;
     background-color: $primary-white-color;
@@ -90,6 +92,7 @@
   }
 
   &__info {
+    flex-grow: 1;
     border: 1px solid #eeeeee;
     padding: 20px 24px;
   }
