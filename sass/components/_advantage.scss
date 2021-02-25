@@ -33,7 +33,7 @@
   }
 
   &__text {
-    width: 450px;
+    max-width: 450px;
 
     text-align: left;
     font-weight: $primary-font-weight;
@@ -51,7 +51,7 @@
   &__icon {
     @include position(flex);
     height: 120px;
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 30px;
 
     background-color: $secondary-bg-color;

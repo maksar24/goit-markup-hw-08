@@ -1,5 +1,4 @@
 .team {
-  min-width: 480px;
   background-color: $secondary-bg-color;
 
   &__section-title {
@@ -47,8 +46,6 @@
   &__details {
     padding-top: 30px;
     padding-bottom: 24px;
-    padding-left: 122px;
-    padding-right: 122px;
 
     @media (min-width: $tablet-width) {
       padding-left: 74px;

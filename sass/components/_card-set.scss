@@ -96,17 +96,4 @@
     border: 1px solid #eeeeee;
     padding: 20px 24px;
   }
-
-  &__picture {
-    display: block;
-    width: 450px;
-
-    @media (min-width: $tablet-width) {
-      width: 354px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 370px;
-    }
-  }
 }

@@ -21,10 +21,10 @@
   &__comment {
     display: flex;
     flex-direction: column;
-    width: 370px;
+    max-width: 370px;
 
     @media (min-width: $desktop-width) {
-      width: 448px;
+      min-width: 448px;
     }
   }
 
@@ -125,8 +125,8 @@
     opacity: 0;
   }
 
-  &__policy-text::before:focus {
-    border-color: $accent-color;
+  &__old-checkbox:focus ~ &__policy-text::before {
+    border: 2px solid $accent-color;
   }
 
   &__policy-text::before {
