@@ -1,8 +1,9 @@
 .header {
+  border-bottom: 1px solid #ececec;
+
   &__container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ececec;
   }
 
   &__website-nav {

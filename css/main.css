@@ -307,6 +307,10 @@ img {
   color: #2196f3;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +318,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .header__website-nav {
@@ -382,7 +385,7 @@ img {
 .hero {
   text-align: center;
   height: 400px;
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -402,6 +405,7 @@ img {
 
 @media (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-bg-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-bg-tablet.jpg);
   }
@@ -677,11 +681,6 @@ img {
   margin-bottom: 16px;
 }
 
-.team__picture {
-  display: block;
-  width: 100%;
-}
-
 .links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,6 +808,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 100%;
   }
 }
@@ -847,9 +849,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -912,6 +914,7 @@ img {
 }
 
 .backdrop {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -948,7 +951,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 100%;
+  width: 95%;
   max-width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1129,7 +1132,7 @@ img {
 .common-form__policy-text::before {
   content: '';
   display: block;
-  width: 16px;
+  min-width: 16px;
   height: 15px;
   margin-right: 8.38px;
   margin-top: 3px;
@@ -1416,9 +1419,6 @@ img {
 }
 
 .card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
@@ -1481,7 +1481,7 @@ img {
 }
 
 .card-set__text {
-  margin: 63px 24px;
+  padding: 63px 24px;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -1543,7 +1543,7 @@ img {
 .menu-mobile {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 48px 83px 48px 40px;
   overflow-y: scroll;
   font-weight: 500;
