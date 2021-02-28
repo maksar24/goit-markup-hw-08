@@ -1,4 +1,7 @@
 .menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: absolute;
   width: 100%;
   height: 100vh;
@@ -11,7 +14,6 @@
   &__nav {
     display: flex;
     flex-direction: column;
-    margin-bottom: 302px;
   }
 
   &__link {
